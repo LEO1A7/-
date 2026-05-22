@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+/* Custom styled range slider for High Density industrial theme */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #141414;
+  height: 2px;
+}
+
+input[type="range"]::-moz-range-track {
+  background: #141414;
+  height: 2px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -6px; /* center the thumb on the track */
+  background-color: #141414;
+  height: 14px;
+  width: 14px;
+  border-radius: 9999px;
+  border: 2px solid #E4E3E0;
+}
+
+input[type="range"]::-moz-range-thumb {
+  border: 2px solid #E4E3E0;
+  background-color: #141414;
+  height: 14px;
+  width: 14px;
+  border-radius: 9999px;
+}
+
+/* Custom markdown styling for high density design */
+.markdown-body p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+.markdown-body strong {
+  font-weight: 700;
+  color: #141414;
+}
+.markdown-body code {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  background-color: rgba(20, 20, 20, 0.08);
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+}
